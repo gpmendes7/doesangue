@@ -1,0 +1,37 @@
+1) instalar liveserver 
+
+2) instalar node e digitar os comandos:
+   a) npm init -y
+   b) npm install express
+   c) node server.js (executar servidor)
+   d) ctrl + c (parar servidor)
+
+3) Para servidor no windows
+   a) digitar ps para mostrar lista de processos
+   b) encontrar processo chamado 'node' e anotar Id
+   c) Executar 'Stop-process <Id>'
+
+4) ctrl + shit + crase (abrir terminal)
+
+5) Configurar inicialização de servidor 
+   a) npm install nodemon (instalar pacote nodemon)
+   b) abrir arquivo 'package.json'
+   c) em "scripts" definir node server.js, para iniciar servidor
+      "scripts": {
+        "start": "node server.js"
+      }
+   d) digitar no terminar 'npm start'
+   e) usar nodemon para sempre reiniciar servidor automaticamente
+      quando necessário
+      "scripts": {
+        "start": "nodemon server.js"
+      }
+
+6) Modelo de template de aplicações. 
+   Permitir incluir dinamismo no HTML
+   npm install nunjucks
+
+7) Ctrl+D (selecionar várias referências de variáveis)
+
+8) Bancos de Dados: PostgreSQL, PostBird
+   npm install pg (conexão com banco de dados)
